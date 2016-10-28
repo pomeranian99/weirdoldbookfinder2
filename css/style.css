@@ -1,0 +1,72 @@
+#viewerCanvas {
+  max-width: 60vmax;
+  height: 60vmax;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headline {
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 5.5vw;
+  margin: 40px 40px 10px 40px;
+  text-align: center;
+}
+
+#instructionRow {
+  margin: 30px 20px 30px 20px;
+}
+
+p {
+  font-family: 'Abhaya Libre', serif;
+  font-size: 1.2em;
+  
+}
+
+#modalTitle {
+  font-family: 'Abhaya Libre', serif;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.footer {
+  margin: 40px 40px 30px 40px;
+  font-family: 'Abhaya Libre', serif;
+  font-size: 1.2em; 
+  text-align: right;
+}
+
+.btn {
+  margin: 4px 0px 4px 0px;
+}
+
+.form-control {
+  margin: 4px 0px 4px 0px;
+}
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 20%;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+	
