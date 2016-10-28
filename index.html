@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Google books viewer experiment (removing jquery for everything)</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+    
+  </head>
+
+  <body>
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type; X-UA-Compatible" content="text/html; charset=utf-8; IE=edge" />
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua:700|Abhaya+Libre" rel="stylesheet">
+  <title>Google Books Embedded Viewer API Example</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="headline">Weird Old Book Finder</h1>
+      </div>
+    </div>
+    <div class="row" id="instructionRow">
+      <div class="col-sm-8">
+        <form>
+          <input type="text" class="form-control" maxlength="300" id="bookQuery">
+        </form>
+      </div>
+      <div class="col-sm-2">
+        <button type="submit" class="btn btn-primary btn-md btn-block" id="buttonPress">Submit</button>
+      </div>
+      <div class="col-sm-2">
+        <button type="button" class="btn btn-info btn-md btn-block" data-toggle="modal" data-target="#whatIsThis">Info</button>
+      </div>
+    </div>
+    <div class="row">
+      <div id="viewerCanvas">
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="footer"><i>(Hastily made by <a href="http://www.clivethompson.net" target="_blank">Clive Thompson</a>)</i></p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="whatIsThis" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title" id="modalTitle">What is this thing?</h4>
+        </div>
+        <div class="modal-body">
+          <p>Type a query and it'll find you a weird old book from before 1923, via Google Books.
+          <p>Only <i>one</i> book! No paradox of choice here. (You can re-run the same query a few times, though; you get different books.)
+          <p>Why "before 1923"? Those books are out of copyright, so you can read the whole thing here! Download it, too.
+          <p>I can't guarantee the book will be weird. Usually is, though.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>   
+    </div>
+  </div>
+      
+      
+ </body>
+</html>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+  </body>
+</html>
