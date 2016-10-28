@@ -17,17 +17,14 @@ function initialize() {
 buttonPress.addEventListener("click", function(e) {
   e.preventDefault();
   bookRequest = bookQuery.value;
-  console.log("The button was pressed and the input value from the form was " + bookRequest);
   findNewBook();
 })
 
-// on enter key, grab search string and run; prevent default
-
+// on enter key, grab search string and run
 document.getElementById('bookQuery').addEventListener('keypress', function(event) {
         if (event.keyCode == 13) {
             event.preventDefault();
           bookRequest = bookQuery.value;
-          console.log("The enter key was pressed and the input value from the form was " + bookRequest);
           findNewBook();
         }
     });
@@ -53,10 +50,6 @@ function findNewBook() {
     } else {
       var randomPick = Math.floor(Math.random() * (possibleBooks.length));
       randomBook = possibleBooks[randomPick];
-      console.log(possibleBooks.length);
-      console.log(possibleBooks);
-      console.log(possibleBooksYears);
-      console.log("The book I picked has an ID of " + randomBook);
       initialize();
     }
   });
